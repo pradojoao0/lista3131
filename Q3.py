@@ -23,5 +23,5 @@ m = np.zeros((linha ,coluna), dtype=int)
 
 for linhas in range(0, linha):
     for colunas in range(0, coluna):
-        m[linhas][colunas] = (2*linhas + 3*colunas) % 9
+        m[linhas][colunas] = (2*linhas + 2*colunas) % 9
 escreverMatriz(m)
