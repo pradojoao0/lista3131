@@ -20,7 +20,7 @@ linhas = len(matriz)
 
 ##Definir a linha do meio 
 
-cont = 1
+cont = 0
 
 for linha in range(0, len(matriz)):
     for coluna in range(0, len(matriz[linha])):
@@ -28,6 +28,6 @@ for linha in range(0, len(matriz)):
             break
         else:
             if(matriz[linha][coluna] % 2 != 0):
-                cont = cont*matriz[linha][coluna]
+                cont = cont+matriz[linha][coluna]
 
-print(f"multiplicação abaixo ímpares = {cont}")
+print(f"soma abaixo ímpares = {cont}")
