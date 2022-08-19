@@ -27,17 +27,17 @@ for linha in range(0, linhasA):
         if(linha % 2 == 0):
             if(coluna % 2 == 0):
                 if(matrizA[linha][coluna] % 2 == 0):
-                    multBranca *= matrizA[linha][coluna]
+                    multPreta *= matrizA[linha][coluna]
             else:
                 if(matrizA[linha][coluna] % 2 == 0):
-                    multPreta *= matrizA[linha][coluna]
+                    multBranca *= matrizA[linha][coluna]
         else:
             if(coluna % 2 == 0):
                 if(matrizA[linha][coluna] % 2 == 0):
-                    multPreta *= matrizA[linha][coluna]
+                    multBranca *= matrizA[linha][coluna]
             else:
                 if(matrizA[linha][coluna] % 2 == 0):
-                    multBranca *= matrizA[linha][coluna]
+                    multPreta *= matrizA[linha][coluna]
 
 print(f"multiplicação pares na cor=0 é {multPreta}; e na outra cor é {multBranca}")
 
