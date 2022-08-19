@@ -18,12 +18,12 @@ colunas = len(m[0])
 
 gotcha = False
 
-if(colunas >= 13):
+if(colunas > 0):
     
     for l in range(0, linhas):
         if(gotcha == False):
             for c in range(0, colunas):
-                if(m[l][13] == 5):
+                if(m[l][0] == 5):
                     print(l)
                     gotcha = True
                     break
